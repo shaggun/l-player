@@ -1,0 +1,178 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #18181B;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding-left: 1rem;
+}
+
+th {
+  text-align: left;
+  font-weight: normal;
+}
+
+tr {
+  border-top: 1px solid #252629;
+  border-bottom: 1px solid #252629;
+  cursor: pointer;
+  height: 60px;
+  color: #C8C9CB;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+span {
+  color: #C8C9CB;
+}
+
+input[type="range"] {
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  outline: none;
+}
+
+/* WebKit browsers */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+
+/* Firefox */
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+
+aside {
+  width: 200px;
+  border-right: 1px solid #252629;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.sidebar {
+  display: flex;
+  flex: 1;
+}
+
+.playlist-info-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.playlist-info {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 500px;
+}
+
+.playlist-info__details {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.playlist-info__name {
+  font-weight: normal;
+  text-align: left;
+  color: #C8C9CB;
+  font-size: 2.5rem;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+
+.icon-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: #787D85;
+  margin: 0;
+  padding: 1rem 0rem 0rem 1rem;
+}
+
+.time-label {
+  color: #C8C9CB;
+  font-size: 0.875rem;
+}
+
+h2, .playlist-info__now-playing {
+  color: #C8C9CB;
+}
+
+p, .playlist-info__artist {
+  color: #787D85;
+  margin: 0;
+}
+
+.playlist {
+  list-style: none;
+  padding: 0.5rem;
+  margin: 0rem;
+}
+
+.playlist-item {
+  font-size: 1rem;
+  color: #C8C9CB;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin: 0.5rem 0.5rem 0.5rem 0rem;
+  border-radius: 0.25rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.track-number {
+  width: 50px;
+}
+
+.track-art {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.player-controls {
+  border-top: 1px solid #252629;
+  padding: 1rem 0rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.volume-slider {
+  display: flex;
+  align-items: center;
+}
