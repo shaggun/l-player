@@ -175,9 +175,9 @@ function App() {
 
       {/* Player Controls */}
       <div className='player-controls'>
-        <IconButton onClick={handlePrevTrack} iconPath='/assets/icons/previous.svg' ariaLabel='Previous Track'/>
-        <IconButton onClick={handlePlayPause} iconPath={isPlaying ? '/assets/icons/pause.svg' : '/assets/icons/play.svg'} ariaLabel={isPlaying ? 'Pause' : 'Play'} />
-        <IconButton onClick={handleNextTrack} iconPath='/assets/icons/next.svg' ariaLabel='Next Track' />
+        <IconButton onClick={handlePrevTrack} iconPath={`${import.meta.env.VITE_BASE_URL}assets/icons/previous.svg`} ariaLabel='Previous Track'/>
+        <IconButton onClick={handlePlayPause} iconPath={isPlaying ? `${import.meta.env.VITE_BASE_URL}assets/icons/pause.svg` : `${import.meta.env.VITE_BASE_URL}assets/icons/play.svg`} ariaLabel={isPlaying ? 'Pause' : 'Play'} />
+        <IconButton onClick={handleNextTrack} iconPath={`${import.meta.env.VITE_BASE_URL}assets/icons/next.svg`} ariaLabel='Next Track' />
         <ProgressBar currentTime={currentTime} duration={duration} onSeek={onSeek} />
         <VolumeSlider value={volume} onChange={setVolume} />
       </div>

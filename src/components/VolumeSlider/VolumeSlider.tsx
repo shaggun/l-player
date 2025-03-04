@@ -18,7 +18,7 @@ export const VolumeSlider: React.FC<VolumeSliderProps> = ({ value, onChange }) =
   return (
     <div className='volume-slider'>
       <IconButton
-        iconPath={value === 0 ? "assets/icons/volume_off.svg" : "assets/icons/volume_on.svg"}
+        iconPath={value === 0 ? `${import.meta.env.VITE_BASE_URL}assets/icons/volume_off.svg` : `${import.meta.env.VITE_BASE_URL}assets/icons/volume_on.svg`}
         ariaLabel="Volume Icon"
         width={20}
         height={20}

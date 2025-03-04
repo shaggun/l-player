@@ -16,7 +16,7 @@ function getImagePath(
   }
 
   // Otherwise, treat the identifier as a name to be formatted.
-  const basePath = options?.basePath ?? '/assets/images';
+  const basePath = options?.basePath ?? `${import.meta.env.VITE_BASE_URL}assets/images`;
   const ext = options?.ext ?? '.jpeg';
   const formattedName = identifier.toLowerCase().replace(/\s+/g, '_');
 
